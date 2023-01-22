@@ -6,13 +6,14 @@ function main(){
 
   var maxspeed = parseInt(inputmaxspeed.value);
   var speed = parseInt(inputspeed.value);
-  var isFacing = inputdir.ariaChecked;
+  var isFacing = inputdir.checked;
 
-  var maxSpeedWithOffset = maxSpeed + ((maxSpeed/100)*10)
+  var maxspeedWithOffset = maxspeed + ((maxspeed/100)*10);
 
-  if(speed > maxSpeedWithOffset && isFacing == true){
+  console.log(maxspeedWithOffset);
+
+  if(speed > maxspeedWithOffset && isFacing == true){
   alert("Du wurdest geblitzt");
   }
 }
-
   
